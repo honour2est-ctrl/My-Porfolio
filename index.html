@@ -21,8 +21,10 @@
 <meta name="twitter:description" content="Mathematics student at LASU, AI educator, and Co-Founder of Nelavista — building AI-powered tools and teaching a generation of African students to use them.">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwQTBEMTYiLz48dGV4dCB4PSIzMiIgeT0iNDMiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjRkZEOTNEIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ITzwvdGV4dD48L3N2Zz4K">
-<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwQTBEMTYiLz48dGV4dCB4PSIzMiIgeT0iNDMiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjRkZEOTNEIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ITzwvdGV4dD48L3N2Zz4K">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 
 <!-- Person structured data (helps Google understand & display this page for name searches) -->
 <script type="application/ld+json">
@@ -390,7 +392,7 @@
   @media (max-width:600px){ .log-entry{grid-template-columns:1fr;} }
   .log-time{font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--teal); white-space:nowrap;}
   .log-role{font-weight:700; font-size:16px; font-family:'Space Grotesk',sans-serif;}
-  .log-org{color:var(--muted); font-size:14px; margin-top:2px;}
+  .log-org{color:var(--blue); font-weight:700; font-style:italic; font-size:14px; margin-top:2px;}
   .log-desc{font-size:14px; color:var(--muted); margin-top:8px; max-width:600px;}
 
   /* Work grid */
@@ -411,12 +413,28 @@
     font-size:clamp(26px,4vw,38px); letter-spacing:-.01em; margin-bottom:12px;
   }
   .accent-teal{color:var(--teal);}
+  .hl{color:var(--blue); font-weight:700; font-style:italic;}
   .award-group-title{
     font-family:'JetBrains Mono',monospace; font-weight:600; font-size:13px;
     letter-spacing:.06em; text-transform:uppercase; color:var(--amber);
     margin:26px 0 6px;
   }
   .award-group-title:first-of-type{margin-top:6px;}
+  .genai-subhead{
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    font-size:clamp(19px,2.6vw,25px); letter-spacing:.02em;
+    color:var(--teal); text-shadow:0 0 20px rgba(0,230,195,.3);
+    margin:38px 0 14px;
+  }
+  .drive-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:14px; padding:11px 22px; border-radius:999px;
+    border:1px solid var(--teal); color:var(--teal);
+    font-family:'JetBrains Mono',monospace; font-size:13.5px;
+    text-decoration:none; background:rgba(0,230,195,.06);
+    transition:background .2s, transform .2s;
+  }
+  .drive-cta:hover{background:rgba(0,230,195,.14); transform:translateY(-2px);}
   .genai-visual{
     max-width:420px; margin:18px 0 30px; border-radius:var(--radius);
     overflow:hidden; border:1px solid var(--line);
@@ -566,9 +584,9 @@
   <div class="wrap">
     <div class="glow-pill s-violet"><span class="dot"></span>About</div>
     <div class="about-text">
-      <p>I'm a dynamic student leader and digital media professional based in Lagos, currently Co-Founding Nelavista — an AI-powered learning platform working to close Africa's education gap through personalised, affordable tutoring.</p>
+      <p>I'm a dynamic student leader and digital media professional based in Lagos, currently Co-Founding <span class="hl">Nelavista</span> — an AI-powered learning platform working to close Africa's education gap through personalised, affordable tutoring.</p>
       <p>My background in mathematics shapes how I approach everything I build: structured, analytical, and grounded in fundamentals. I pair that with hands-on experience in generative AI, prompt engineering, and conversational AI to help brands, schools, churches, and individual creators grow their visibility online.</p>
-      <p>Outside of building products, I hold executive leadership roles across LASU's Mathematics and Science student bodies, coordinate AI bootcamps for hundreds of students, and mentor upcoming AI creators through my own content and coaching practice.</p>
+      <p>Outside of building products, I hold executive leadership roles across <span class="hl">LASU</span>'s Mathematics and Science student bodies, coordinate AI bootcamps for hundreds of students, and mentor upcoming AI creators through my own content and coaching practice.</p>
     </div>
   </div>
 </section>
@@ -577,6 +595,15 @@
   <div class="wrap">
     <div class="glow-pill s-teal"><span class="dot"></span>Experience</div>
     <div class="log">
+
+      <div class="log-entry">
+        <div class="log-time">2026 → now</div>
+        <div>
+          <div class="log-role">Campus Lead</div>
+          <div class="log-org">African Technological Forum (ATF) — Lagos State University</div>
+          <div class="log-desc">Leading a growing community of student AI builders on campus — coordinating the chapter, running workshops and build sessions, mentoring members on AI tools and projects, and representing LASU within the wider ATF network. Also drives recruitment and onboarding of new members, organises tech events and hackathons, and connects student builders to opportunities, partners, and resources beyond campus.</div>
+        </div>
+      </div>
 
       <div class="log-entry">
         <div class="log-time">2025 → now</div>
@@ -682,12 +709,12 @@
         <span class="closing-quote-attr">— Onovwiome Honourable Onome</span>
       </blockquote>
       <p>My leadership journey has been shaped by a deep commitment to <strong>service, innovation, integrity, and meaningful impact</strong>. I believe that leadership is not defined by the title one holds, but by the lives one touches, the problems one solves, and the positive change one creates.</p>
-      <p>As a student leader at <strong>Lagos State University (LASU)</strong>, I have consistently pursued opportunities to strengthen communication, empower students, improve institutional processes, and promote a culture of excellence. My leadership experience has taken me through several positions of responsibility, including serving as <strong>General Secretary of the Nigerian Association of Mathematical Science Students (NAMSSN), LASU</strong>, a member of the <strong>35th Science Students' Representative Council</strong>, and <strong>General Secretary-Elect of the Nigerian Association of Science Students (NASS), LASU</strong>.</p>
+      <p>As a student leader at <span class="hl">Lagos State University (LASU)</span>, I have consistently pursued opportunities to strengthen communication, empower students, improve institutional processes, and promote a culture of excellence. My leadership experience has taken me through several positions of responsibility, including serving as <span class="hl">General Secretary of the Nigerian Association of Mathematical Science Students (NAMSSN), LASU</span>, a member of the <span class="hl">35th Science Students' Representative Council</span>, and <span class="hl">General Secretary-Elect of the Nigerian Association of Science Students (NASS), LASU</span>.</p>
       <p>These experiences have provided me with practical exposure to <strong>administration, strategic communication, documentation, stakeholder engagement, event coordination, team management, and organizational development</strong>. More importantly, they have taught me that effective leadership requires listening before acting, understanding people before making decisions, and taking responsibility when challenges arise.</p>
       <p>Beyond traditional leadership structures, I have made <strong>digital transformation and innovation</strong> a significant part of my leadership philosophy. I have championed the adoption of technology within student communities by introducing innovative digital systems, leveraging artificial intelligence to improve productivity, and advocating for technology-driven solutions to organizational and academic challenges.</p>
       <p>Through AI training sessions, mentorship initiatives, and technology-focused programs, I have had the opportunity to equip <strong>hundreds of students with practical digital skills</strong> that can support their academic pursuits, personal development, and professional careers. These experiences have reinforced my belief that one of the greatest responsibilities of leadership is not simply to lead people today, but to <strong>equip others to become better leaders tomorrow</strong>.</p>
-      <p>My commitment to service and excellence has also earned me recognition, including being honoured as <strong>Executive of the Year by NAMSSN</strong>. Beyond institutional recognition, my leadership experiences have continued to open doors to broader platforms where young leaders are challenged to think beyond their immediate communities and contribute to global development.</p>
-      <p>My leadership attributes and commitment to social impact have also positioned me to pursue opportunities with <strong>renowned international organizations and leadership networks</strong>, including the <strong>Millennium Fellowship</strong>, a global leadership development initiative presented by the <strong>United Nations Academic Impact (UNAI)</strong> and the <strong>Millennium Campus Network (MCN)</strong>. The fellowship brings together university students from campuses around the world who are committed to advancing the Sustainable Development Goals and creating meaningful social impact within their communities.</p>
+      <p>My commitment to service and excellence has also earned me recognition, including being honoured as <span class="hl">Executive of the Year by NAMSSN</span>. Beyond institutional recognition, my leadership experiences have continued to open doors to broader platforms where young leaders are challenged to think beyond their immediate communities and contribute to global development.</p>
+      <p>My leadership attributes and commitment to social impact have also positioned me to pursue opportunities with <strong>renowned international organizations and leadership networks</strong>, including the <span class="hl">Millennium Fellowship</span>, a global leadership development initiative presented by the <span class="hl">United Nations Academic Impact (UNAI)</span> and the <span class="hl">Millennium Campus Network (MCN)</span>. The fellowship brings together university students from campuses around the world who are committed to advancing the Sustainable Development Goals and creating meaningful social impact within their communities.</p>
       <p>Engaging with opportunities of this calibre has expanded my understanding of leadership beyond campus boundaries. It has challenged me to view leadership through a <strong>global lens</strong>, connect with diverse perspectives, develop solutions to shared challenges, and recognize that meaningful change often begins with individuals who are willing to serve where they are.</p>
       <p>My journey has therefore been more than a pursuit of leadership positions. It has been a continuous journey of <strong>learning, serving, innovating, empowering, and creating impact</strong>. Every position I have occupied has presented a new opportunity to contribute, and every challenge has strengthened my conviction that leadership should leave institutions, communities, and people better than it found them.</p>
       <p>As I continue to grow as a leader, my vision is to contribute to building institutions and communities that are <strong>more efficient, transparent, inclusive, innovative, and people-centred</strong>. I aspire to inspire young people to see leadership not as a privilege of position, but as a responsibility to serve, solve problems, empower others, and create lasting change.</p>
@@ -834,8 +861,65 @@
     <div class="about-text">
       <p>Generative AI is a branch of artificial intelligence that creates new content such as text, images, videos, audio, and code based on user prompts. It has transformed the way people learn, work, solve problems, and create digital content.</p>
       <p>I have embraced Generative AI as a tool for innovation and impact. Through AI, I have trained and mentored students, created educational resources, designed professional graphics and videos, built digital solutions, and helped individuals and organizations improve productivity. By sharing practical AI knowledge and promoting responsible AI adoption, I have empowered others to leverage technology for learning, leadership, creativity, and community development.</p>
-      <p>The LASU AI Bootcamp (The Eko Revolution), which I hosted, has influenced and empowered over <strong style="color:var(--teal);">1,000 students</strong>. Beyond the bootcamp, at Nelavista we now have <strong style="color:var(--violet);">2,500+ students</strong> actively using our AI-powered educational platform, learning and growing with the tools every day.</p>
-      <p>As AI Lead Consultant for <strong>K17 Kapital L.L.C</strong> in <strong style="color:var(--blue);">Dubai, UAE</strong>, I work remotely to integrate AI solutions across the company's diversified operations — Oil &amp; Gas, Shipping, Logistics, Dredging, and Aviation — helping streamline decision-making and workflows for an enterprise operating at the intersection of energy, maritime, and strategic mobility across West Africa and beyond.</p>
+      <p>The <span class="hl">LASU AI Bootcamp (The Eko Revolution)</span>, which I hosted, has influenced and empowered over <strong style="color:var(--teal);">1,000 students</strong>. Beyond the bootcamp, at <span class="hl">Nelavista</span> we now have <strong style="color:var(--violet);">2,500+ students</strong> actively using our AI-powered educational platform, learning and growing with the tools every day.</p>
+      <p>As AI Lead Consultant for <span class="hl">K17 Kapital L.L.C</span> in <strong style="color:var(--blue);">Dubai, UAE</strong>, I work remotely to integrate AI solutions across the company's diversified operations — Oil &amp; Gas, Shipping, Logistics, Dredging, and Aviation — helping streamline decision-making and workflows for an enterprise operating at the intersection of energy, maritime, and strategic mobility across West Africa and beyond.</p>
+      <p>Speaking has become one of the most direct ways I pass this work on. I was one of the speakers at <span class="hl">Google Developers Group (GDG) LASU</span> — <span class="hl">Build With AI</span> program, where I taught students and young people how to use AI for content creation and how to apply those same tools across the other parts of their lives: study and revision, personal branding, job and scholarship applications, small business ideas, and everyday productivity. The goal was never to show off what AI can do, but to leave each person in the room with something they could open and use the same evening.</p>
+      <p>I also served as a distinguished speaker at the <span class="hl">Foreign Institute of Research STEM</span>, where I spoke on artificial intelligence in relation to research — how AI can support literature review, data analysis, and hypothesis testing, and more importantly how young researchers can point those capabilities at real problems in their own communities rather than abstract ones. Much of that session focused on framing research questions around issues people actually live with, and using AI to move faster from question to workable solution.</p>
+      <p>Alongside these, I have spoken at and facilitated a number of other engagements — bootcamps, campus workshops, and mentorship sessions — each built around the same conviction: that AI literacy should not stay locked inside tech circles, and that the fastest way to widen access is to teach it plainly, to as many people as will listen.</p>
+
+      <h4 class="genai-subhead">THE ERA OF AI UGC CONTENT</h4>
+      <p>User-generated content used to mean a customer's phone-camera review or a creator's honest unboxing video. That's changing fast. Brands, agencies, and everyday creators are now using AI to script, voice, edit, and even "star in" content that looks and feels native to TikTok, Instagram Reels, and YouTube Shorts — product ads, brand stories, explainer videos, and testimonials generated in minutes rather than shot over days with a full production crew.</p>
+      <p>The numbers show how fast this shift is moving. <strong style="color:var(--violet);">92% of brands</strong> are already embracing AI-driven UGC, with some seeing engagement rise by as much as <strong style="color:var(--teal);">8.7x</strong> and cost-per-acquisition drop by roughly <strong style="color:var(--amber);">30%</strong> as a result. On the broader content side, <strong style="color:var(--violet);">87% of marketers</strong> now use generative AI in at least one workflow, AI cuts production timelines by up to <strong style="color:var(--teal);">80%</strong>, and teams using it are publishing <strong style="color:var(--amber);">42% more content</strong> every month. UGC itself remains the trust engine behind all of it — consumers are <strong style="color:var(--violet);">2.4x more likely</strong> to see it as authentic than brand-made content, and <strong style="color:var(--teal);">80% of Gen Z</strong> say UGC videos directly shape their purchase decisions.</p>
+      <p>What this tells me is simple: the winning approach isn't AI replacing the human voice, it's AI removing the bottleneck between an idea and a finished piece of content — letting one person do the work that used to need a small team, without losing the authenticity that makes people trust what they're watching in the first place. That's the exact space I've been building in — using AI to script, edit, and produce content that still feels personal, native, and worth stopping to watch.</p>
+      <a class="drive-cta" href="https://drive.google.com/drive/folders/1AdlOr1rSnE7GB0CF0T6ctEzlzYPeD3Jp?usp=sharing" target="_blank" rel="noopener">📁 Explore some of my UGC AI-generated content</a>
+
+      <h4 class="genai-subhead" style="margin-top:50px;">MY AI TOOLS HUB</h4>
+      <p>I work across a wide range of AI tools spanning content creation, video production, image generation, voice synthesis, research, software development, automation, and productivity. I don't lean on one tool for everything — I select each one based on the specific problem I'm solving, and I regularly combine several of them within a single project.</p>
+
+      <div class="award-group-title">AI Assistants, Research &amp; Productivity</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">ChatGPT</div><div class="issuer">Research, brainstorming, writing, prompt engineering, and turning rough ideas into structured outputs and workflows.</div></div></div>
+        <div class="cert-row"><div><div class="name">Google Gemini</div><div class="issuer">Research, writing, document analysis, and multimodal tasks combining text, images, and documents within Google's AI ecosystem.</div></div></div>
+        <div class="cert-row"><div><div class="name">Claude</div><div class="issuer">Long-form writing, analysis, and refining complex ideas — especially useful for working through large amounts of information.</div></div></div>
+        <div class="cert-row"><div><div class="name">Grok</div><div class="issuer">Brainstorming, current-topic research, and content ideation, often for alternative perspectives when developing ideas.</div></div></div>
+        <div class="cert-row"><div><div class="name">NotebookLM</div><div class="issuer">Interacting with my own documents — summarizing, extracting key points, and querying large source materials directly.</div></div></div>
+      </div>
+
+      <div class="award-group-title">Image Generation &amp; Creative Design</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">Nano Banana</div><div class="issuer">AI image generation and editing, particularly for realistic visuals, character consistency, and controlled image modifications.</div></div></div>
+        <div class="cert-row"><div><div class="name">Canva AI</div><div class="issuer">Graphics, presentations, social media designs, flyers, and event materials — combining AI generation with manual design and branding.</div></div></div>
+      </div>
+
+      <div class="award-group-title">AI Video Generation &amp; Production</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">Google Flow</div><div class="issuer">AI-powered filmmaking — cinematic scenes, visual storytelling, and camera movement, turning scripts into video sequences.</div></div></div>
+        <div class="cert-row"><div><div class="name">Veo 3</div><div class="issuer">High-quality AI video generation from prompts — cinematic storytelling, advertisements, short films, and promotional videos.</div></div></div>
+        <div class="cert-row"><div><div class="name">Kling AI</div><div class="issuer">Video generation and image-to-video animation with fine control over character movement, camera motion, and visual continuity.</div></div></div>
+        <div class="cert-row"><div><div class="name">Seedance</div><div class="issuer">AI video creation and animation for dynamic scenes, motion, and storytelling.</div></div></div>
+        <div class="cert-row"><div><div class="name">Weavy AI</div><div class="issuer">A creative AI workspace for combining image and video workflows into cohesive generative compositions.</div></div></div>
+      </div>
+
+      <div class="award-group-title">AI Voice, Speech &amp; Audio</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">ElevenLabs</div><div class="issuer">Realistic AI voice generation and voiceovers — narration, character voices, and promotional audio.</div></div></div>
+        <div class="cert-row"><div><div class="name">YarnGPT</div><div class="issuer">AI-generated voice and speech content, particularly for accessible voice generation in creative projects.</div></div></div>
+        <div class="cert-row"><div><div class="name">TTSMaker</div><div class="issuer">Text-to-speech generation — converting written scripts into spoken audio for videos, presentations, and educational content.</div></div></div>
+      </div>
+
+      <div class="award-group-title">AI Development &amp; Building</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">Google AI Studio</div><div class="issuer">Experimenting with Google's generative AI models, prompt testing, and prototyping AI-powered applications.</div></div></div>
+        <div class="cert-row"><div><div class="name">Gemma</div><div class="issuer">Google's open AI model family — exploring smaller, more accessible models for practical AI-powered solutions.</div></div></div>
+        <div class="cert-row"><div><div class="name">Firebase</div><div class="issuer">Backend infrastructure, data storage, authentication, and hosting — moving AI ideas from prototype to functional application.</div></div></div>
+      </div>
+
+      <div class="award-group-title">Productivity &amp; Digital Workflow</div>
+      <div class="cert-list">
+        <div class="cert-row"><div><div class="name">iLovePDF</div><div class="issuer">Merging, compressing, converting, and organizing PDF files when preparing professional documents and digital resources.</div></div></div>
+      </div>
+
+      <p style="margin-top:30px;">I don't rely on one AI tool for everything — I combine them depending on the project. A typical workflow might use <strong>ChatGPT or Gemini</strong> to develop an idea and write a script, <strong>Google AI Studio</strong> to prototype the workflow, <strong>Nano Banana</strong> for visual assets, <strong>Google Flow, Veo 3, Kling, or Seedance</strong> to turn those assets into video, and <strong>ElevenLabs or TTSMaker</strong> for the voiceover. This lets me approach AI not just as a chatbot user, but as a creative and technical toolset for building, producing, automating, and solving problems.</p>
     </div>
   </div>
 </section>
